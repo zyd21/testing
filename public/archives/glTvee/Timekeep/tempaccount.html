@@ -1,0 +1,1036 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+				<link rel='stylesheet' media='screen' type='text/css' href='/jquery/colorpicker/css/colorpicker.css' />
+				<style type = 'text/css'>
+						#floatMenu { 
+							top:50px;  
+							position: absolute;  
+							width:400px;  
+						} 
+						/*
+						#floatMenu ul {  
+							margin-bottom:20px;  
+						}  
+						#floatMenu ul li a {  
+							display:block;  
+							border:1px solid #999;  
+							border-left:6px solid #999;  
+							text-decoration:none;  
+							color:#ccc;  
+							padding:5px 5px 5px 25px;  
+						}
+						*/
+						</style>
+ <title>Brewed Concepts, Inc. Time Management System</title>
+ <link rel="stylesheet" type="text/css" href="stylesheets/tmReset.css" media="screen"/>
+ <link rel="stylesheet" type="text/css" href="stylesheets/tmScreen.css" media="screen"/>
+ <script type = "text/javascript" src = "javascripts/jquery-1.6.4.js"></script>
+ <script type = "text/javascript">
+	$(document).ready(function(){
+	  //$("submit").click(function(){
+		$("p:first").css("border","3px solid red");
+	  //});
+	});
+ </script>
+</head>
+
+<body>
+ <div id="wrapper" class="container_12 clearfix">
+  <header class="container_12 clearfix">
+   <section id="logo" class="grid_4 alpha">
+    <embed width="300" height="120" src="images/brewedLogo.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" align="middle" play="true" loop="true" scale="showall" wmode="transparent" devicefont="false" bgcolor="#ffffff" name="brewedLogo" menu="true" allowfullscreen="false" allowscriptaccess="sameDomain" salign="" type="application/x-shockwave-flash">
+   </section>
+   <section id="info" class="grid_8 omega">
+    <h2>Administration Panel</h2>
+	<h3>October 14, 2011 6:29am</h3>
+	<span id="infoLink"><a href="#">time keep record</a> <b>|</b> <a href="#">manage accounts</a> <b>|</b> <a href="#">logout</a></span>
+   </section>
+  </header>
+  <div class="contentForm">
+   <form>
+   <h2>Create Account</h2>
+    <table>
+	 <tr>
+	  <td>First Name</td>
+	  <td class="name">Kopiroti</td>
+	 </tr>
+	 <tr>
+	  <td>Last Name</td>
+	  <td class="name">ArriesGAGO</td>
+	 </tr>
+	 <tr>
+	  <td>Password</td>
+	  <td class="name">maitimako</td>
+	 </tr>
+	 <tr>
+	  <td>Account Type</td>
+	  <td class="name">User</td>
+	 </tr>
+	</table>
+   <h2>Time Schedule</h2>
+    <table>
+	 <tr>
+	  <td>Monday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td>Tuesday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td>Wednesday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td>Thursday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td>Friday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td colspan="2"><input class="btn" type="submit" value="Update Account" /></td>
+	 </tr>
+	</table>
+   </form>
+   <img src='http://www.dreambank.org/images/facebook.png' alt='fb' />
+  </div>
+  <footer>© Brewed Concepts / Thousand Minds. Alrights Reserved.</footer>
+ </div>
+ <p>test 1</p><br />
+ <p>test 2</p><br />
+ <p>test 3</p><br />
+ <p>test 4</p><br />
+
+				<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+				<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>
+				<script src='/jquery/colorpicker/js/colorpicker.js'></script>
+        <script>
+						$(function() {
+            		$( '#floatMenu').draggable({containment : 'parent'});
+            		$('body').css('background', '#fff');
+$('body').css('color', '#333');
+$('header #info h2').css('color', '#3d9efd');
+$('header #info h3').css('color', '#666');
+$('header #info span#infoLink').css('color', '#3d9efd');
+$('header #info span#infoLink a:hover').css('color', '#3d9efd');
+$('header #info span#infoLink a').css('color', '#666');
+$('div.content h2').css('color', '#333');
+$('div.content table').css('border', '#999');
+$('div.content table th').css('background', '#3d9efd');
+$('div.content table th').css('color', '#fff');
+$('div.content table tr').css('background', '#eaeaea');
+$('div.content table tr.even').css('background', '#f5f5f5');
+$('div.content table td a.action').css('background', '#3d9efd');
+$('div.content table td a.action').css('color', '#fff');
+$('div.content table td a.action:hover').css('background', '#999');
+$('div.content table td input[type=submit]').css('background', '#3d9efd');
+$('div.content table td input[type=submit]').css('color', '#fff');
+$('div.content table td input[type=submit]:active').css('background', '#399ab1');
+$('div.contentForm h2').css('color', '#333');
+$('div.contentForm table td input').css('border', '#ccc');
+$('div.contentForm table td select').css('border', '#ccc');
+$('div.contentForm table td input[type=submit]').css('background', '#3d9efd');
+$('div.contentForm table td input[type=submit]').css('color', '#fff');
+$('div.contentForm table td input[type=submit]:active').css('background', '#399ab1');
+$('div.contentForm table td.name').css('color', '#3d9efd');
+$('section#paginate ul li a').css('color', '#333');
+$('footer').css('color', '#666');
+
+            		$('#element0').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('body').css('background', '#' + hex); 
+
+        		$('body').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('body').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('body').css('background', '#' + hex); 
+
+        	  $('#element0').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('body').css('border', 'none');
+        	}
+        });$('#element1').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('body').css('color', '#' + hex); 
+
+        		$('body').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('body').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('body').css('color', '#' + hex); 
+
+        	  $('#element1').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('body').css('border', 'none');
+        	}
+        });$('#element2').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('header #info h2').css('color', '#' + hex); 
+
+        		$('header #info h2').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('header #info h2').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('header #info h2').css('color', '#' + hex); 
+
+        	  $('#element2').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('header #info h2').css('border', 'none');
+        	}
+        });$('#element3').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('header #info h3').css('color', '#' + hex); 
+
+        		$('header #info h3').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('header #info h3').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('header #info h3').css('color', '#' + hex); 
+
+        	  $('#element3').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('header #info h3').css('border', 'none');
+        	}
+        });$('#element4').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('header #info span#infoLink').css('color', '#' + hex); 
+
+        		$('header #info span#infoLink').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('header #info span#infoLink').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('header #info span#infoLink').css('color', '#' + hex); 
+
+        	  $('#element4').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('header #info span#infoLink').css('border', 'none');
+        	}
+        });$('#element5').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('header #info span#infoLink a:hover').css('color', '#' + hex); 
+
+        		$('header #info span#infoLink a:hover').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('header #info span#infoLink a:hover').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('header #info span#infoLink a:hover').css('color', '#' + hex); 
+
+        	  $('#element5').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('header #info span#infoLink a:hover').css('border', 'none');
+        	}
+        });$('#element6').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('header #info span#infoLink a').css('color', '#' + hex); 
+
+        		$('header #info span#infoLink a').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('header #info span#infoLink a').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('header #info span#infoLink a').css('color', '#' + hex); 
+
+        	  $('#element6').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('header #info span#infoLink a').css('border', 'none');
+        	}
+        });$('#element7').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content h2').css('color', '#' + hex); 
+
+        		$('div.content h2').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content h2').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content h2').css('color', '#' + hex); 
+
+        	  $('#element7').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content h2').css('border', 'none');
+        	}
+        });$('#element8').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table').css('border', '#' + hex); 
+
+        		$('div.content table').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table').css('border', '#' + hex); 
+
+        	  $('#element8').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table').css('border', 'none');
+        	}
+        });$('#element9').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table th').css('background', '#' + hex); 
+
+        		$('div.content table th').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table th').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table th').css('background', '#' + hex); 
+
+        	  $('#element9').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table th').css('border', 'none');
+        	}
+        });$('#element10').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table th').css('color', '#' + hex); 
+
+        		$('div.content table th').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table th').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table th').css('color', '#' + hex); 
+
+        	  $('#element10').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table th').css('border', 'none');
+        	}
+        });$('#element11').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table tr').css('background', '#' + hex); 
+
+        		$('div.content table tr').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table tr').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table tr').css('background', '#' + hex); 
+
+        	  $('#element11').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table tr').css('border', 'none');
+        	}
+        });$('#element12').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table tr.even').css('background', '#' + hex); 
+
+        		$('div.content table tr.even').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table tr.even').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table tr.even').css('background', '#' + hex); 
+
+        	  $('#element12').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table tr.even').css('border', 'none');
+        	}
+        });$('#element13').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table td a.action').css('background', '#' + hex); 
+
+        		$('div.content table td a.action').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table td a.action').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table td a.action').css('background', '#' + hex); 
+
+        	  $('#element13').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table td a.action').css('border', 'none');
+        	}
+        });$('#element14').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table td a.action').css('color', '#' + hex); 
+
+        		$('div.content table td a.action').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table td a.action').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table td a.action').css('color', '#' + hex); 
+
+        	  $('#element14').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table td a.action').css('border', 'none');
+        	}
+        });$('#element15').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table td a.action:hover').css('background', '#' + hex); 
+
+        		$('div.content table td a.action:hover').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table td a.action:hover').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table td a.action:hover').css('background', '#' + hex); 
+
+        	  $('#element15').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table td a.action:hover').css('border', 'none');
+        	}
+        });$('#element16').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table td input[type=submit]').css('background', '#' + hex); 
+
+        		$('div.content table td input[type=submit]').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table td input[type=submit]').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table td input[type=submit]').css('background', '#' + hex); 
+
+        	  $('#element16').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table td input[type=submit]').css('border', 'none');
+        	}
+        });$('#element17').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table td input[type=submit]').css('color', '#' + hex); 
+
+        		$('div.content table td input[type=submit]').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table td input[type=submit]').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table td input[type=submit]').css('color', '#' + hex); 
+
+        	  $('#element17').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table td input[type=submit]').css('border', 'none');
+        	}
+        });$('#element18').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.content table td input[type=submit]:active').css('background', '#' + hex); 
+
+        		$('div.content table td input[type=submit]:active').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.content table td input[type=submit]:active').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.content table td input[type=submit]:active').css('background', '#' + hex); 
+
+        	  $('#element18').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.content table td input[type=submit]:active').css('border', 'none');
+        	}
+        });$('#element19').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.contentForm h2').css('color', '#' + hex); 
+
+        		$('div.contentForm h2').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.contentForm h2').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.contentForm h2').css('color', '#' + hex); 
+
+        	  $('#element19').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.contentForm h2').css('border', 'none');
+        	}
+        });$('#element20').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.contentForm table td input').css('border', '#' + hex); 
+
+        		$('div.contentForm table td input').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.contentForm table td input').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.contentForm table td input').css('border', '#' + hex); 
+
+        	  $('#element20').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.contentForm table td input').css('border', 'none');
+        	}
+        });$('#element21').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.contentForm table td select').css('border', '#' + hex); 
+
+        		$('div.contentForm table td select').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.contentForm table td select').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.contentForm table td select').css('border', '#' + hex); 
+
+        	  $('#element21').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.contentForm table td select').css('border', 'none');
+        	}
+        });$('#element22').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.contentForm table td input[type=submit]').css('background', '#' + hex); 
+
+        		$('div.contentForm table td input[type=submit]').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.contentForm table td input[type=submit]').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.contentForm table td input[type=submit]').css('background', '#' + hex); 
+
+        	  $('#element22').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.contentForm table td input[type=submit]').css('border', 'none');
+        	}
+        });$('#element23').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.contentForm table td input[type=submit]').css('color', '#' + hex); 
+
+        		$('div.contentForm table td input[type=submit]').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.contentForm table td input[type=submit]').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.contentForm table td input[type=submit]').css('color', '#' + hex); 
+
+        	  $('#element23').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.contentForm table td input[type=submit]').css('border', 'none');
+        	}
+        });$('#element24').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.contentForm table td input[type=submit]:active').css('background', '#' + hex); 
+
+        		$('div.contentForm table td input[type=submit]:active').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.contentForm table td input[type=submit]:active').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.contentForm table td input[type=submit]:active').css('background', '#' + hex); 
+
+        	  $('#element24').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.contentForm table td input[type=submit]:active').css('border', 'none');
+        	}
+        });$('#element25').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('div.contentForm table td.name').css('color', '#' + hex); 
+
+        		$('div.contentForm table td.name').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('div.contentForm table td.name').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('div.contentForm table td.name').css('color', '#' + hex); 
+
+        	  $('#element25').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('div.contentForm table td.name').css('border', 'none');
+        	}
+        });$('#element26').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('section#paginate ul li a').css('color', '#' + hex); 
+
+        		$('section#paginate ul li a').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('section#paginate ul li a').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('section#paginate ul li a').css('color', '#' + hex); 
+
+        	  $('#element26').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('section#paginate ul li a').css('border', 'none');
+        	}
+        });$('#element27').ColorPicker({ 
+
+        	onSubmit: function(hsb, hex, rgb, el) { 
+
+        		$(el).val(hex); 
+
+        		$('footer').css('color', '#' + hex); 
+
+        		$('footer').css('border', 'none');
+        		$(el).ColorPickerHide(); 
+
+        	}, 
+
+        	onBeforeShow: function () { 
+
+        	  $('footer').css('border', 'dotted 2px red');
+        		$(this).ColorPickerSetColor(this.value); 
+
+        	}, 
+
+        	onChange : function (hsb, hex, rgb, el) { 
+
+        	  $('footer').css('color', '#' + hex); 
+
+        	  $('#element27').val(hex);
+        	},
+        	onHide : function() { 
+
+        	  $('footer').css('border', 'none');
+        	}
+        });
+            		var currentElement;
+            		$('img').click(function(){ 
+
+            		  currentElement = $(this); 
+
+            		  $('#browse').trigger('click'); 
+
+            		}); 
+
+            		
+            		$('#browse').change(function (){  
+
+                   $('#upload').trigger('click'); 
+   
+                }); 
+
+                
+                $('#uploadForm').submit(function() { 
+
+                  $.post('/chameloen/imagechange' + '?' + $(this).serialize(), 
+
+                            function(data){ 
+
+                              if(data.status = 'ok') { 
+
+                                currentElement.attr('src', data.path); 
+
+                              } 
+
+                            } 
+
+                        ); 
+
+                    return false; 
+
+                }); 
+
+            });
+				</script>
+				<div id='floatMenu' style='border-color:black;'>
+								<ul><li>body background<input type='text' name='element0' id='element0' value='fff' /></li><li>body  color<input type='text' name='element1' id='element1' value='333' /></li><li>header #info h2 color<input type='text' name='element2' id='element2' value='3d9efd' /></li><li>header #info h3 color<input type='text' name='element3' id='element3' value='666' /></li><li>header #info span#infoLink color<input type='text' name='element4' id='element4' value='3d9efd' /></li><li>header #info span#infoLink a:hover color<input type='text' name='element5' id='element5' value='3d9efd' /></li><li>header #info span#infoLink a color<input type='text' name='element6' id='element6' value='666' /></li><li>div.content h2 color<input type='text' name='element7' id='element7' value='333' /></li><li>div.content table border<input type='text' name='element8' id='element8' value='999' /></li><li>div.content table th background<input type='text' name='element9' id='element9' value='3d9efd' /></li><li>div.content table th  color<input type='text' name='element10' id='element10' value='fff' /></li><li>div.content table tr background<input type='text' name='element11' id='element11' value='eaeaea' /></li><li>div.content table tr.even background<input type='text' name='element12' id='element12' value='f5f5f5' /></li><li>div.content table td a.action background<input type='text' name='element13' id='element13' value='3d9efd' /></li><li>div.content table td a.action  color<input type='text' name='element14' id='element14' value='fff' /></li><li>div.content table td a.action:hover background<input type='text' name='element15' id='element15' value='999' /></li><li>div.content table td input[type=submit] background<input type='text' name='element16' id='element16' value='3d9efd' /></li><li>div.content table td input[type=submit]  color<input type='text' name='element17' id='element17' value='fff' /></li><li>div.content table td input[type=submit]:active background<input type='text' name='element18' id='element18' value='399ab1' /></li><li>div.contentForm h2 color<input type='text' name='element19' id='element19' value='333' /></li><li>div.contentForm table td input border<input type='text' name='element20' id='element20' value='ccc' /></li><li>div.contentForm table td select border<input type='text' name='element21' id='element21' value='ccc' /></li><li>div.contentForm table td input[type=submit] background<input type='text' name='element22' id='element22' value='3d9efd' /></li><li>div.contentForm table td input[type=submit]  color<input type='text' name='element23' id='element23' value='fff' /></li><li>div.contentForm table td input[type=submit]:active background<input type='text' name='element24' id='element24' value='399ab1' /></li><li>div.contentForm table td.name color<input type='text' name='element25' id='element25' value='3d9efd' /></li><li>section#paginate ul li a color<input type='text' name='element26' id='element26' value='333' /></li><li>footer color<input type='text' name='element27' id='element27' value='666' /></li></ul>
+				</div>
+
+				<div style='visibility:hidden'>
+
+				  <form id='uploadForm' name='uploadForm' action='/chameleons/imagechange' enctype='multipart/form-data' method='post'>
+				    <input type='hidden' value='' />
+				    <input id='browse' name='upload' type='file' />
+				    <input id='upload' type='submit' value='upload' />
+				  </form>
+				</div>
+				</body>
+</html>

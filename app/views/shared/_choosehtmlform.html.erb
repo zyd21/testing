@@ -1,0 +1,6 @@
+<table>
+	<tr>
+		<th><%= f.label(:filehtm, "HTML File") %></th>
+		<td><%= f.select("filehtm", @htmlfiles.collect {|p| [ p, p ] }) %></td>
+	</tr>		
+</table>

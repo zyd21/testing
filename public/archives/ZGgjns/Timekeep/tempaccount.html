@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style type = 'text/css'>
+							#floatMenu {  
+							position:absolute;  
+							top:150px;  
+							left:50%;  
+							margin-left:235px;  
+							width:200px;  
+						}  
+						#floatMenu ul {  
+							margin-bottom:20px;  
+						}  
+						#floatMenu ul li a {  
+							display:block;  
+							border:1px solid #999;  
+							background-color:#222;  
+							border-left:6px solid #999;  
+							text-decoration:none;  
+							color:#ccc;  
+							padding:5px 5px 5px 25px;  
+						} 
+						#floatMenu ul.menu1 li a:hover {  
+							border-color:#09f;  
+						}  
+						#floatMenu ul.menu2 li a:hover {  
+							border-color:#9f0;  
+						}  
+						#floatMenu ul.menu3 li a:hover {  
+							border-color:#f09;  
+						} 
+						</style>
+						
+						<script type = 'text/javascript' src = 'jquery-1.6.4.js'></script>
+						<script language='javascript' src='jquery.js'></script>  
+						<script language='javascript' src='jquery.dimensions.js'></script>
+						
+						<script language = 'javascript'>
+							var name = '#floatMenu';
+							var menuYloc = null;
+								$(document).ready(function(){
+									alert('eeeeeeeeee');
+									menuYloc = parseInt($(name).css('top').substring(0,$(name).css('top').indexOf('px')))
+									$(window).scroll(function () {
+										offset = menuYloc+$(document).scrollTop()+'px';
+										$(name).animate({top:offset},{duration:500,queue:false});
+									});
+								});  
+						</script>  
+ <title>Brewed Concepts, Inc. Time Management System</title>
+ <link rel="stylesheet" type="text/css" href="stylesheets/tmReset.css" media="screen"/>
+ <link rel="stylesheet" type="text/css" href="stylesheets/tmScreen.css" media="screen"/>
+ <script type = "text/javascript" src = "javascripts/jquery-1.6.4.js"></script>
+ <script type = "text/javascript">
+	$(document).ready(function(){
+	  //$("submit").click(function(){
+		$("p:first").css("border","3px solid red");
+	  //});
+	});
+ </script>
+</head>
+
+<body>
+ <div id="wrapper" class="container_12 clearfix">
+  <header class="container_12 clearfix">
+   <section id="logo" class="grid_4 alpha">
+    <embed width="300" height="120" src="images/brewedLogo.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" align="middle" play="true" loop="true" scale="showall" wmode="transparent" devicefont="false" bgcolor="#ffffff" name="brewedLogo" menu="true" allowfullscreen="false" allowscriptaccess="sameDomain" salign="" type="application/x-shockwave-flash">
+   </section>
+   <section id="info" class="grid_8 omega">
+    <h2>Administration Panel</h2>
+	<h3>October 14, 2011 6:29am</h3>
+	<span id="infoLink"><a href="#">time keep record</a> <b>|</b> <a href="#">manage accounts</a> <b>|</b> <a href="#">logout</a></span>
+   </section>
+  </header>
+  <div class="contentForm">
+   <form>
+   <h2>Create Account</h2>
+    <table>
+	 <tr>
+	  <td>First Name</td>
+	  <td class="name">Kopiroti</td>
+	 </tr>
+	 <tr>
+	  <td>Last Name</td>
+	  <td class="name">ArriesGAGO</td>
+	 </tr>
+	 <tr>
+	  <td>Password</td>
+	  <td class="name">maitimako</td>
+	 </tr>
+	 <tr>
+	  <td>Account Type</td>
+	  <td class="name">User</td>
+	 </tr>
+	</table>
+   <h2>Time Schedule</h2>
+    <table>
+	 <tr>
+	  <td>Monday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td>Tuesday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td>Wednesday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td>Thursday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td>Friday</td>
+	  <td class="name">12:00:00 AM</td>
+	 </tr>
+	 <tr>
+	  <td colspan="2"><input class="btn" type="submit" value="Update Account" /></td>
+	 </tr>
+	</table>
+   </form>
+  </div>
+  <footer>© Brewed Concepts / Thousand Minds. Alrights Reserved.</footer>
+ </div>
+ <p>test 1</p><br />
+ <p>test 2</p><br />
+ <p>test 3</p><br />
+ <p>test 4</p><br />
+<div id='floatMenu'>  
+								<ul class = 'menu1'>  
+									<li><a href='#' onclick='return false;'> Home </a></li>  
+								</ul>  
+							  
+							   <ul class = 'menu2'>  
+									<li>askljdklasjdlaksjdlkasjd klasjdlkasjd<input type = 'text' name = 'testing' /></li>
+									<li><input type = 'submit' name = 'Submit' /></li>									
+								</ul>  
+							  
+								<ul class = 'menu3'>  
+									<li><a href='#' onclick='return false;'> Technical support </a></li>  
+								</ul>  
+							</div>  
+</body>
+</html>

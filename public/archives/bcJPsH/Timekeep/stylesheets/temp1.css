@@ -1,0 +1,28 @@
+body|background: #fff url(../images/bg.png) repeat-x
+body| color: #333
+header #info h2|color: #3d9efd
+header #info h3|color: #666
+header #info span#infoLink|color: #3d9efd
+header #info span#infoLink a:hover|color: #3d9efd
+header #info span#infoLink a|color: #666
+div.content h2|color: #333
+div.content table|border: 1px solid #999
+div.content table th|background: #3d9efd
+div.content table th| color: #fff
+div.content table tr|background: #eaeaea
+div.content table tr.even|background: #f5f5f5
+div.content table td a.action|background: url('../images/alert-overlay.png') repeat-x scroll 0 0 #3d9efd
+div.content table td a.action| color: #fff
+div.content table td a.action:hover|background: #999
+div.content table td input[type=submit]|background: url('../images/alert-overlay.png') repeat-x scroll 0 0 #3d9efd
+div.content table td input[type=submit]| color: #fff
+div.content table td input[type=submit]:active|background: #399ab1
+div.contentForm h2|color: #333
+div.contentForm table td input|border: 1px solid #ccc
+div.contentForm table td select|border: 1px solid #ccc
+div.contentForm table td input[type=submit]|background: url('../images/alert-overlay.png') repeat-x scroll 0 0 #3d9efd
+div.contentForm table td input[type=submit]| color: #fff
+div.contentForm table td input[type=submit]:active|background: #399ab1
+div.contentForm table td.name|color: #3d9efd
+section#paginate ul li a|color: #333
+footer|color: #666

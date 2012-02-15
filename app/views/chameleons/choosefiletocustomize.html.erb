@@ -1,0 +1,11 @@
+<div>
+	<%= form_for(:htmlform, :url => {:action => 'customize'}) do |f| %>
+	<h2>Choose a File to Edit</h2>
+		<%= render(:partial => "shared/choosehtmlform", :locals => {:f => f})%>
+	<table>
+		<tr>
+			<td><%= submit_tag("Submit") %></td>
+		</tr>
+	</table>
+	<% end %>
+</div>

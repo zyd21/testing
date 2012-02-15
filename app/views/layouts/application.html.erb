@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Chameleon</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h1><% if !flash[:notice].blank? %>
+<%= flash[:notice] %>
+<% end %></h1>
+
+<%= yield %>
+
+<footer>&copy; Brewed Concepts / Thousand Minds. Alrights Reserved.</footer>
+
+</body>
+</html>

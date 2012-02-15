@@ -1,0 +1,240 @@
+html {
+margin: 0; padding: 0; border: 0;
+}
+body {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+div {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+span {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+object {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+iframe {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+h1 {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+h2 {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+h3 {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+h4 {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+h5 {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+h6 {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+p {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+blockquote {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+pre {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+a {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+abbr {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+acronym {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+address {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+code {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+del {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+dfn {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+em {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+img {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+q {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+dl {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+dt {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+dd {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+ol {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+ul {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+li {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+fieldset {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+form {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+label {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+legend {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+table {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+caption {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+tbody {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+tfoot {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+thead {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+tr {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+th {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+td {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+article {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+aside {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+dialog {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+figure {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+footer {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+header {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+hgroup {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+nav {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+section {
+border: 0; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;
+}
+article {
+display: block;
+}
+aside {
+display: block;
+}
+details {
+display: block;
+}
+figcaption {
+display: block;
+}
+figure {
+display: block;
+}
+dialog {
+display: block;
+}
+footer {
+display: block;
+}
+header {
+display: block;
+}
+hgroup {
+display: block;
+}
+menu {
+display: block;
+}
+nav {
+display: block;
+}
+section {
+display: block;
+}
+body {
+background: white; line-height: 1.5;
+}
+table {
+border-collapse: separate; border-spacing: 0;
+}
+caption {
+float: none; font-weight: normal !important; text-align: left;
+}
+th {
+float: none; font-weight: normal !important; text-align: left;
+}
+td {
+float: none; font-weight: normal !important; text-align: left;
+}
+table {
+vertical-align: middle;
+}
+th {
+vertical-align: middle;
+}
+td {
+vertical-align: middle;
+}
+blockquote:before {
+content: '';
+}
+blockquote:after {
+content: '';
+}
+q:before {
+content: '';
+}
+q:after {
+content: '';
+}
+blockquote {
+quotes: "" "";
+}
+q {
+quotes: "" "";
+}
+a img {
+border: none;
+}
+:focus {
+outline: 0;
+}

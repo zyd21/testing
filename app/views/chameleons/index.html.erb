@@ -1,0 +1,9 @@
+<%= form_tag({:action => "uploadfiles"}, :multipart => true) %>
+<table>
+	<tr>
+		<td>Zip file:</td>
+		<td><%= file_field "upload", "zip_file" %><br/></td>
+	</tr>
+</table>
+<%= submit_tag "Submit" %>
+<% form_tag %><br/>

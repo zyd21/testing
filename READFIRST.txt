@@ -1,0 +1,26 @@
+//ADD THIS TO parser.rb file located in the cssparser gem library
+
+
+
+	def zydgetallhexvalues(media_types = :all)
+      out = ''
+      each_selector(media_types) do |selectors, declarations, specificity|
+		if declarations.include? "#"
+			
+			semicolonsplit = declarations.split(";")
+			i = 0
+			while i < semicolonsplit.size
+				
+				if semicolonsplit[i].include? "#"
+					out << "#{selectors}|#{semicolonsplit[i]}\n"
+				else
+				end
+				i += 1
+			end
+			
+		else
+		end
+		
+      end
+      out
+    end
